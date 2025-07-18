@@ -26,11 +26,11 @@ body {
 }
 
 .sidebar.closed {
-  width: 80px;
+  width: 5rem;
 }
 
 .sidebar.open {
-  width: 230px;
+  width: 100rem;
 }
 
 .sidebar i {
@@ -87,12 +87,12 @@ body {
 }
 
 .arrow-btn i {
-  color: white;  
-  font-size: 18px;
+  color: #2c2c2c;  
+  font-size: 25px !important;
 }
 
 .arrow-btn:hover {
-  background-color: rgb(255, 255, 255);  
+  background-color: rgb(255, 255, 255) !important;  
 }
 
 .logo {

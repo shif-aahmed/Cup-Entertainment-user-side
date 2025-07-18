@@ -68,7 +68,6 @@
   font-weight: 800;
    line-height: 1;
    margin-top: 0.5rem; 
-  white-space: nowrap;      
   overflow: hidden;
   text-overflow: ellipsis;
 }

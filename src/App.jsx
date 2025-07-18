@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import 'remixicon/fonts/remixicon.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 import UserHome from './pages/UserHomePage/UserHomePage.jsx';
 import HomePage from "./pages/HomePage.jsx";
 import About from './pages/About/About.jsx';

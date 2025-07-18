@@ -109,7 +109,7 @@ const MovieGrid = () => {
   }, []);
 
   return (
-    <div className="movie-container">
+    <div className="movie-container-home">
       <MovieSection title="Trending Now" images={trending} />
       <MovieSection title="New Releases" images={newReleases} />
       <MovieSection title="Live TV" images={liveTV} isSquare />

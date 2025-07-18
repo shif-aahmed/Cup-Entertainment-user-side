@@ -8,12 +8,18 @@
   font-family: 'Segoe UI', sans-serif;
   color: white;
 }
-.hero-slider img{
+
+/* Keeps background images behind everything */
+.hero-slider img {
   z-index: -10 !important;
 }
-.slide-content{
+
+/* Main text content layer */
+.slide-content {
   z-index: 50 !important;
 }
+
+/* Background layer */
 .background {
   position: absolute;
   width: 100%;
@@ -23,6 +29,7 @@
   z-index: 1;
 }
 
+/* Gradient overlay for text visibility */
 .overlay {
   position: absolute;
   width: 100%;
@@ -31,19 +38,27 @@
   z-index: 2;
 }
 
+/* Text and buttons section */
 .hero-content {
   position: relative;
   z-index: 3;
   max-width: 650px;
   padding: 250px 150px 0 30px;
+
+  /* Bootstrap-friendly additions */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+/* Headline text */
 .hero-content h1 {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
+/* Stream label and highlight */
 .hero-content .streams span {
   color: #d400ff;
   font-weight: bold;
@@ -54,6 +69,7 @@
   font-weight: 500;
 }
 
+/* Description under headline */
 .hero-content .desc {
   margin-bottom: 30px;
   font-size: 16px;
@@ -61,12 +77,15 @@
   color: #dddddd;
 }
 
+/* Button group */
 .hero-buttons {
   display: flex;
   gap: 15px;
   margin-bottom: 30px;
+  flex-wrap: wrap; /* Makes buttons wrap on smaller screens */
 }
 
+/* Main CTA */
 .watch-now {
   background: #d400ff;
   border: none;
@@ -77,6 +96,7 @@
   cursor: pointer;
 }
 
+/* Secondary CTA */
 .watch-trailer {
   background: #ffffff;
   border: none;
@@ -87,6 +107,7 @@
   cursor: pointer;
 }
 
+/* Hover states */
 .watch-now:hover {
   background: #b100d6;
 }
@@ -95,6 +116,7 @@
   background: #e0e0e0;
 }
 
+/* Navigation controls */
 .slider-controls {
   display: flex;
   align-items: center;
@@ -103,8 +125,10 @@
   bottom: 0px;
   right: -44rem;
   transform: translateX(50%);
+  flex-wrap: wrap;
 }
 
+/* Arrow buttons */
 .arrow {
   background: #111;
   color: white;
@@ -120,6 +144,7 @@
   background: #333;
 }
 
+/* Dot indicators */
 .dots {
   display: flex;
   gap: 8px;
@@ -134,4 +159,27 @@
 
 .dot.active {
   background: #d400ff;
+}
+
+/* Responsive Tweaks (Optional but helpful) */
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 150px 20px 0 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .watch-now,
+  .watch-trailer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .slider-controls {
+    right: 0;
+    justify-content: center;
+    transform: none;
+  }
 }
