@@ -1,4 +1,4 @@
-/* Footer styles for CUP Entertainment */
+
 .footer {
   background-color: #222831;
   color: #B0BEC5;
@@ -6,9 +6,10 @@
   padding: 2rem 1.5rem;
   position: relative;
   z-index: 30;
+  width: 100vw;
 }
 
-/* Responsive padding for larger screens */
+
 @media (min-width: 768px) {
   .footer {
     padding-left: 3rem;

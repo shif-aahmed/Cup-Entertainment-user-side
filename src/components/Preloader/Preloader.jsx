@@ -6,14 +6,14 @@ const Preloader = ({ onFinish }) => {
   const [startAnimation, setStartAnimation] = useState(false);
 
   useEffect(() => {
-    // Let the logo appear immediately, and fade out after 1.5s (or whatever looks smooth)
+  
     const animationStart = setTimeout(() => {
-      setStartAnimation(true); // triggers .hide CSS
-    }, 1300); // 🕒 Logo stays fully visible a bit longer
+      setStartAnimation(true); 
+    }, 1300); 
 
     const finish = setTimeout(() => {
-      if (onFinish) onFinish(); // unmounts preloader
-    }, 1800); // 🕒 Only 500ms later, instead of 700ms or more
+      if (onFinish) onFinish(); 
+    }, 1800); 
 
     return () => {
       clearTimeout(animationStart);

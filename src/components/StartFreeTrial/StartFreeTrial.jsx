@@ -1,6 +1,6 @@
 import React, { useState } from "react"; 
-import "./StartFreeTrial.css"; // Import the external CSS
-import RegistrationModal from "../RegistrationModal/RegistrationModal";
+import "./StartFreeTrial.css";
+import RegistrationModal from "../RegistrationModal/RegistrationModal.jsx";
 function StartFreeTrial() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (

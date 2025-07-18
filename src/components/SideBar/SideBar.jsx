@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import './SideBar.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 const SideBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 

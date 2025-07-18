@@ -1,25 +1,25 @@
 import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import 'remixicon/fonts/remixicon.css';
-
-import UserHome from './pages/UserHomePage/UserHomePage';
-import HomePage from "./pages/HomePage";
-import About from './pages/About/About';
-import ContactUs from './pages/ContactUs/ContactUs';
-import PrivacyPolicy from './pages/privacypolicy/PrivacyPolicy';
-import Preloader from './components/Preloader/Preloader'; // adjust path if needed
+import 'bootstrap/dist/css/bootstrap.min.css';
+import UserHome from './pages/UserHomePage/UserHomePage.jsx';
+import HomePage from "./pages/HomePage.jsx";
+import About from './pages/About/About.jsx';
+import ContactUs from './pages/ContactUs/ContactUs.jsx';
+import PrivacyPolicy from './pages/privacypolicy/PrivacyPolicy.jsx';
+import Preloader from './components/Preloader/Preloader.jsx'; 
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Only run once on mount
+    
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // adjust time to match your Preloader animation
+    }, 2000); 
 
     return () => clearTimeout(timer);
-  }, []); // Empty dependency array ensures this runs once
+  }, []); 
 
   return (
     <div className="bg-[#121212] text-[#EEEEEE] font-inter min-h-screen">

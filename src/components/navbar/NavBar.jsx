@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import './style.css';
-// import UserHome from './pages/UserHomePage/UserHomePage';
 import logo from '../../assets/images/logo.png';
 
 
@@ -11,7 +10,7 @@ function NavBar() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
-        setMenuOpen(false); // Auto-close menu on resizing to large screen
+        setMenuOpen(false);
       }
     };
     window.addEventListener('resize', handleResize);

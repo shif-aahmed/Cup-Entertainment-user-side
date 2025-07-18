@@ -1,8 +1,8 @@
 import React from 'react';
-import SideBar from '../../components/SideBar/SideBar';
-import HeroSlider from '../../components/HeroSlider/HeroSlider';
-import Grid from '../../components/Grid/Grid';
-import Footer2 from '../../components/Footer2/Footer2';
+import SideBar from '../../components/SideBar/SideBar.jsx';
+import HeroSlider from '../../components/HeroSlider/HeroSlider.jsx';
+import Grid from '../../components/Grid/Grid.jsx';
+import Footer2 from '../../components/Footer2/Footer2.jsx';
 import './UserHomePage.css';
 
 function UserHome() {
