@@ -1,7 +1,7 @@
 import React from 'react';
-import './Footer.css';
+import './HomeFooter.css';
 
-const Footer = () => {
+const HomeFooter = () => {
   return (
     <footer className="footer">
       <div className="footer-links">
@@ -19,4 +19,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default HomeFooter;

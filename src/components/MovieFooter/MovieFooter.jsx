@@ -1,8 +1,8 @@
 import React from 'react';
-import './Footer2.css';
+import './MovieFooter.css';
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 
-const Footer2 = () => {
+const MovieFooter = () => {
   return (
     <footer className="footer bg-dark text-light pt-5 pb-3">
       <div className="container">
@@ -79,4 +79,4 @@ const Footer2 = () => {
   );
 };
 
-export default Footer2;
+export default MovieFooter;

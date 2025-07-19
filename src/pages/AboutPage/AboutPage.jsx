@@ -1,8 +1,8 @@
 import React from 'react';
 import './AboutPage.css'; 
 import NavBar from "../../components/NavBar/NavBar.jsx";
-import Footer from '../../components/Footer/Footer.jsx';
-function About() {
+import HomeFooter from '../../components/HomeFooter/HomeFooter.jsx';
+function AboutPage() {
   return (
     <div>
     <NavBar />
@@ -20,10 +20,10 @@ function About() {
           At CUP Entertainment, we believe in seamless access and intuitive design. Our platform is optimized for cross-device compatibility, allowing you to enjoy your favorite content on your TV, smartphone, tablet, or computer—anytime, anywhere. We are committed to fostering a global community through the power of storytelling, breaking down barriers and connecting diverse audiences one captivating narrative at a time.
         </p>
       </section>
-      <Footer />
+      <HomeFooter />
     </main>
     </div>
   );
 }
 
-export default About;
+export default AboutPage;

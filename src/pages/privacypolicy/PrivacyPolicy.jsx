@@ -1,7 +1,7 @@
 import React from 'react';
 import './PrivacyPolicy.css';
 import NavBar from '../../components/navbar/NavBar.jsx';
-import Footer from '../../components/footer/Footer.jsx';
+import Footer from '../../components/HomeFooter/HomeFooter.jsx';
 
 const PrivacyPolicy = () => {
   return (

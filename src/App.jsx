@@ -5,9 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 
-import UserHome from './pages/UserHomePage/UserHomePage.jsx';
+import MovieHome from './pages/MovieHomePage/MovieHomePage.jsx';
 import HomePage from "./pages/HomePage.jsx";
-import About from './pages/AboutPage/AboutPage.jsx';
+import AboutPage from './pages/AboutPage/AboutPage.jsx';
 import ContactUs from './pages/ContactUs/ContactUs.jsx';
 import PrivacyPolicy from './pages/privacypolicy/PrivacyPolicy.jsx';
 import Preloader from './components/PreLoader/PreLoader.jsx'; 
@@ -31,10 +31,10 @@ function App() {
       ) : (
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/userhomePage" element={<UserHome />} />
+          <Route path="/userhomePage" element={<MovieHome />} />
         </Routes>
       )}
     </div>

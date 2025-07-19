@@ -1,7 +1,7 @@
 import React from 'react';
 import './ContactUs.css';
-import NavBar from '../../components/navbar/NavBar.jsx';
-import Footer from '../../components/footer/Footer.jsx';
+import NavBar from '../../components/NavBar/NavBar.jsx';
+import HomeFooter from '../../components/HomeFooter/HomeFooter.jsx';
 function ContactUs() {
   return (
     <div>
@@ -43,7 +43,7 @@ function ContactUs() {
         </section>
       
     </main>
-    <Footer />
+    <HomeFooter />
     </div>
   );
 }

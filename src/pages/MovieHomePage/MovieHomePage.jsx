@@ -1,23 +1,23 @@
 import React from 'react';
 import SideBar from '../../components/SideBar/SideBar.jsx';
 import HeroSlider from '../../components/HeroSlider/HeroSlider.jsx';
-import Grid from '../../components/Grid/Grid.jsx';
-import Footer2 from '../../components/Footer2/Footer2.jsx';
-import './UserHomePage.css';
+import MovieGrid from '../../components/MovieGrid/MovieGrid.jsx';
+import MovieFooter from '../../components/MovieFooter/MovieFooter.jsx';
+import './MovieHomePage.css';
 
-function UserHome() {
+function MovieHome() {
   return (
     <div className="home-container">
       <SideBar />
       <div className="content-wrapper">
         <div className="main-content">
           <HeroSlider />
-          <Grid />
+          <MovieGrid />
         </div>
-        <Footer2 />
+        <MovieFooter />
       </div>
     </div>
   );
 }
 
-export default UserHome;
+export default MovieHome;
