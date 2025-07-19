@@ -1,8 +1,6 @@
-/* OTT Highlights Section */
 .ott-section {
   width: 93vw;
   margin: 0 3vw 3rem;
-  margin-bottom: 3rem;
   padding: 2rem 1rem;
   background-color: #1F242D;
   border-radius: 0.75rem;
@@ -10,15 +8,13 @@
   text-align: center;
 }
 
-/* Section Heading */
 .ott-section h3 {
-  font-size: 1.875rem; /* text-3xl */
+  font-size: 1.875rem;
   font-weight: 700;
   color: #00ADB5;
   margin-bottom: 1.5rem;
 }
 
-/* Grid Layout */
 .ott-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -28,19 +24,6 @@
   padding: 0 1rem;
 }
 
-@media (min-width: 768px) {
-  .ott-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .ott-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Individual Highlight Cards */
 .ott-card {
   background-color: #222831;
   padding: 1.5rem;
@@ -60,4 +43,16 @@
   color: #B0BEC5;
   font-size: 1rem;
   line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .ott-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .ott-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

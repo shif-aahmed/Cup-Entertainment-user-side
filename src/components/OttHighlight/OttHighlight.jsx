@@ -1,7 +1,7 @@
 import React from 'react';
-import './OttHighlights.css'; // Make sure this CSS is linked
+import './OttHighlight.css'; // Make sure this CSS is linked
 
-const OttHighlights = () => {
+const OttHighlight = () => {
   return (
     <section className="ott-section section-padding">
       <h3>OTT Highlights</h3>
@@ -29,4 +29,4 @@ const OttHighlights = () => {
   );
 };
 
-export default OttHighlights;
+export default OttHighlight;

@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import NavBar from '../components/navbar/NavBar.jsx';
+import NavBar from '../components/NavBar/NavBar.jsx';
 import CarouselBanner from '../components/CarouselBanner/CarouselBanner.jsx';
-import MovieGrid from '../components/moviegrid/MovieGrid.jsx';
-import About from '../components/about/AboutComp.jsx';
+import MovieGrid from '../components/Moviegrid/MovieGrid.jsx';
+import About from '../components/About/About.jsx';
 import RegistrationModal from '../components/RegistrationModal/RegistrationModal.jsx';
-import Footer from '../components/footer/Footer.jsx';
-import Ott from '../components/ottheighlight/ott.jsx';
+import Footer from '../components/Footer/Footer.jsx';
+import OttHighlight from '../components/OttHighlight/OttHighlight.jsx';
 import Catagories from '../components/Categories/CategoriesSection.jsx';
 import StartFreeTrial from '../components/StartFreeTrial/StartFreeTrial.jsx';
 const HomePage = () => {
@@ -17,7 +17,7 @@ const HomePage = () => {
       <CarouselBanner />
       <MovieGrid />
       <About />
-      <Ott />
+      <OttHighlight />
       <Catagories />
       <StartFreeTrial />
       <Footer />

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
-import './style.css';
+import './NavBar.css';
 import logo from '../../assets/images/logo.png';
 
 
@@ -48,22 +48,22 @@ function NavBar() {
       {/* Mobile dropdown menu (toggle) */}
       {menuOpen && (
         <div className="mobile-nav-dropdown">
-          <a href="#start-free-trial-section" className="mobile-menu-link">
+          <a href="/" className="mobile-menu-link">
             Home
           </a>
-          <a href="#start-free-trial-section" className="mobile-menu-link">
+          <a href="/userhomePage" className="mobile-menu-link">
             Movies
           </a>
-          <a href="#start-free-trial-section" className="mobile-menu-link">
+          <a href="/userhomePage" className="mobile-menu-link">
             Drama
           </a>
-          <a href="#start-free-trial-section" className="mobile-menu-link">
+          <a href="/userhomePage" className="mobile-menu-link">
             Live TV
           </a>
-          <a href="about.html" className="mobile-menu-link">
+          <a href="/about" className="mobile-menu-link">
             About Us
           </a>
-          <a href="contact.html" className="mobile-menu-link">
+          <a href="/contact-us" className="mobile-menu-link">
             Contact Us
           </a>
         </div>

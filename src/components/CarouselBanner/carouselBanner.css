@@ -11,16 +11,12 @@
   width: 100%;
   transition: transform 0.7s ease-in-out;
 }
-.carousel-bg{
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.2;
-    z-index: 0;
-  mask-image: linear-gradient(to top, transparent 0%, black 65%);
-  -webkit-mask-image: linear-gradient(to top, transparent 0%, black 65%);
+.carousel-desc-short {
+  display: none;
+}
+
+.carousel-desc-full {
+  display: block;
 }
 
 .carousel-slide {
@@ -40,8 +36,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.5;
+  opacity: 0.2;
   z-index: 0;
+  mask-image: linear-gradient(to top, transparent 0%, black 65%);
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, black 65%);
 }
 
 .carousel-overlay {
@@ -52,57 +50,49 @@
   z-index: 1;
 }
 
-
- .carousel-content {
+.carousel-content {
   text-align: center;
   max-width: 700px;
   margin: 0 auto;
   padding: 2rem;
-   z-index: 2;
-    max-width: 90%;             
-  width: 100%;      
+  z-index: 2;
+  width: 90%;
 }
 
+/* Typography */
 .carousel-content h2 {
-  font-size: 3.5rem;        
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 800;
-   line-height: 1;
-   margin-top: 0.5rem; 
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.2;
+  margin: 0.5rem 0 1rem;
 }
 
 .carousel-content p {
-  font-size: 1rem;
-  line-height: 1.4;
-  margin-bottom: 1.5rem;
-  max-width: 90%;              
-  width: 90%;     
-  text-align: center;
-  padding: 0 2rem;      
-  margin-left: auto;
-  margin-right: auto;          
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  line-height: 1.5;
+  margin: 0 auto 1.5rem;
+  max-width: 90%;
+  padding: 0 1rem;
 }
 
-
-
-
+/* Buttons */
 .carousel-button {
   background-color: #00ADB5;
   color: white;
   padding: 0.8rem 2.2rem;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
   border: none;
   border-radius: 50px;
   font-weight: bold;
   transition: background-color 0.3s;
-   margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .carousel-button:hover {
   background-color: #009da3;
 }
 
+/* Tags */
 .carousel-tags {
   display: flex;
   justify-content: center;
@@ -124,6 +114,7 @@
   background-color: #009da3;
 }
 
+/* Controls */
 .carousel-controls {
   position: absolute;
   bottom: 3.5rem;
@@ -161,4 +152,63 @@
   backdrop-filter: blur(10px);
   z-index: 2;
   pointer-events: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .carousel-content {
+    padding: 1.5rem;
+  }
+  
+  .carousel-button {
+    padding: 0.7rem 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-content h2 {
+    font-size: 1.3rem;
+    line-height: 1.1;
+  }
+  .carousel-desc-short {
+    display: block;
+  }
+  .carousel-desc-full {
+    display: none;
+  }
+  
+  .carousel-content p {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+  
+  .carousel-tags {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .carousel-tags span {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .carousel-tags span:nth-child(3) {
+    grid-column: 1 / span 2;
+    width: 60%;
+    justify-self: center;
+  }
+  
+  .carousel-controls {
+    bottom: 2.5rem;
+    right: 1rem;
+  }
+  
+  .carousel-controls button {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
 }

@@ -1,38 +1,35 @@
-/* StartFreeTrial Section Styling */
-
 .start-free-trial {
   width: 93vw;
   margin: 0 3vw 3rem;
-  margin-bottom: 3rem; /* mb-12 */
-  padding: 2rem; /* py-8 */
+  padding: 2rem;
   background-color: #1F242D;
-  border-radius: 0.5rem; /* rounded-lg */
+  border-radius: 0.5rem;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 
 .trial-heading {
-  font-size: 1.875rem; /* text-3xl */
+  font-size: 1.875rem;
   font-weight: bold;
-  margin-bottom: 1.5rem; /* mb-6 */
+  margin-bottom: 1.5rem;
   color: #00ADB5;
 }
 
 .trial-description {
-  font-size: 1.125rem; /* text-lg */
+  font-size: 1.125rem;
   color: #EEEEEE;
-  max-width: 48rem; /* max-w-3xl */
-  margin: 0 auto 2rem auto; /* mx-auto mb-8 */
-  padding: 0 1rem; /* px-4 */
+  max-width: 48rem;
+  margin: 0 auto 2rem auto;
+  padding: 0 1rem;
 }
 
 .trial-button {
   background-color: #00ADB5;
   color: white;
   font-weight: bold;
-  padding: 0.75rem 2rem; /* py-3 px-8 */
+  padding: 0.75rem 2rem;
   border: none;
-  border-radius: 9999px; /* rounded-full */
+  border-radius: 9999px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s ease;
   display: flex;
